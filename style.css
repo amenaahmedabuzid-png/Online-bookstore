@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script' ;
+  background-color: #fffafc;
+  color: #333;
+}
+
+/* Top bar */
+.top-bar {
+  background-color: #f6c6d1;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e68a9e;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e68a9e;
+}
+
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: #fff0f5;
+}
+
+.hero img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.book-info {
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+.book-info h1 {
+  font-size: 36px;
+  color: #222;
+}
+
+.book-info p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #e68a9e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #d47286;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #f7c9d4;
+  padding: 10px;
+  font-size: 14px;
+}
