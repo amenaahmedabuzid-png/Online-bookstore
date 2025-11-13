@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Dancing Script' ;
+  font-family: 'Dancing Script', cursive;
   background-color: #fffafc;
   color: #333;
 }
@@ -23,16 +23,27 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Logo */
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 22px;
   font-weight: bold;
   color: #e68a9e;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+ 
 }
 
 .nav-links a {
@@ -41,7 +52,8 @@ body {
   font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links .active {
   color: #e68a9e;
 }
 
@@ -80,6 +92,40 @@ body {
   line-height: 1.6;
 }
 
+/* About Section */
+.about-section {
+  background-color: #fff0f5;
+  padding: 60px 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: #e68a9e;
+}
+
+.about-text p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 button {
   background-color: #e68a9e;
   border: none;
@@ -101,4 +147,131 @@ footer {
   background-color: #f7c9d4;
   padding: 10px;
   font-size: 14px;
+}
+.login-page {
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Dancing Script', cursive;
+}
+
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #e68a9e;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-form button {
+  background-color: #e68a9e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form button:hover {
+  background-color: #d47286;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.note a {
+  color: #e68a9e;
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}
+/* Register Page */
+.register-page {
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Dancing Script', cursive;
+}
+
+.register-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.register-container h2 {
+  color: #e68a9e;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.register-form button {
+  background-color: #e68a9e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-form button:hover {
+  background-color: #d47286;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.note a {
+  color: #e68a9e;
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
 }
