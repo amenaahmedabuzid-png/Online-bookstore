@@ -7,12 +7,13 @@ if (viewMoreBtn) {
     window.location.href = "about.html";
   });
 }
-// عناصر السلايدر
+
+ // Select hero slider elements
 const bookImg = document.querySelector(".hero .book img");
 const bookTitle = document.querySelector(".hero .book-info h1");
 const bookDesc = document.querySelector(".hero .book-info p");
 
-// البيانات – تقدري تضيفي كتب أكتر براحتك
+// Slides data (you can add more books here)
 const slides = [
   {
     img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc",
@@ -33,14 +34,14 @@ const slides = [
 
 let index = 0;
 
-// تغيير السلايد
+// Function to update the slide
 function updateSlide() {
   bookImg.src = slides[index].img;
   bookTitle.textContent = slides[index].title;
   bookDesc.textContent = slides[index].desc;
 }
 
-// Auto slide كل 6 ثواني
+// Auto slide every 6 seconds
 setInterval(() => {
   index = (index + 1) % slides.length;
   updateSlide();
@@ -112,4 +113,5 @@ if (registerForm) {
     window.location.href = 'login.html';
   });
 }
+
 
