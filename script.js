@@ -7,6 +7,45 @@ if (viewMoreBtn) {
     window.location.href = "about.html";
   });
 }
+// عناصر السلايدر
+const bookImg = document.querySelector(".hero .book img");
+const bookTitle = document.querySelector(".hero .book-info h1");
+const bookDesc = document.querySelector(".hero .book-info p");
+
+// البيانات – تقدري تضيفي كتب أكتر براحتك
+const slides = [
+  {
+    img: "https://images.unsplash.com/photo-1519682337058-a94d519337bc",
+    title: "Wild Reverence",
+    desc: "Set in the world of the gods first introduced in Divine Rivals, bestselling author Rebecca Ross delivers a sweeping, beautiful novel filled with tension, romance, and dark secrets."
+  },
+  {
+    img: "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
+    title: "The Night Garden",
+    desc: "A magical tale that blends fantasy, mystery, and emotional depth into one enchanting story."
+  },
+  {
+    img: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
+    title: "Starborn Vows",
+    desc: "An epic fantasy romance full of fate, celestial magic, and unforgettable battles."
+  }
+];
+
+let index = 0;
+
+// تغيير السلايد
+function updateSlide() {
+  bookImg.src = slides[index].img;
+  bookTitle.textContent = slides[index].title;
+  bookDesc.textContent = slides[index].desc;
+}
+
+// Auto slide كل 6 ثواني
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  updateSlide();
+}, 6000);
+
 
 // ------------------------------
 // ABOUT PAGE: "Learn More" Button
@@ -73,3 +112,4 @@ if (registerForm) {
     window.location.href = 'login.html';
   });
 }
+
